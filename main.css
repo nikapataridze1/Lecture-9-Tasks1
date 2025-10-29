@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: dotted 10px #3498db;
+  border-radius: 100%;
+  /* animation: spin 3s linear infinite; */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Responsice Design */
+
+@media only screen and (max-width: 600px) {
+}
