@@ -25,6 +25,7 @@ body {
 
 .row {
   display: flex;
+  flex-direction: row;
 }
 
 .card {
@@ -35,7 +36,23 @@ body {
   margin: 10px;
 }
 
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
+
 /* Responsice Design */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .box {
+    background-color: lightgreen;
+  }
 }
+
+/* ტელეფონი 768 პიქსელი და ქვემოთ*/
+/* პადი 1024 პიქსელი */
+/* ლეპტოპი და სხვა 1024 ზემოთ */
